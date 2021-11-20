@@ -1,0 +1,51 @@
+		
+		README - TEMA 2 PC
+			Radu Octavian, 313CC
+
+
+	1) Criptare Parole : Cifrul Vigenere modificat
+
+		Timp estimat: 75 de minute
+		Dificultati: -
+
+		Dupa ce am reusit multiplicarea cheii in mod corect am identificat 4 cauzri de 
+		criptare determinant de case ul cheii cat si a literei ce trebuie criptata.
+		Cazul special este cel in care cheia ia este in upper case astfel litera se va 
+		muta cu 26 de pozitii, dupa care aplic atatea mutarii de cat de departe este cheia de A.
+		De fiecare data verific daca dupa aplicarea criptarii litera iese din case ul aflat 
+		initial si fac schimbariile necesare.
+
+	2) Automatically fill
+
+		Timp estimat: 180 de minute
+		Dificultati: abordarea algoritmica a problemei
+
+		Am creat un tablou in care retin in ordinea ctirii delimitatorii si posibilile
+		campuri, dupa care in O(n^2) verific fiecare posibil camp daca este un camp,
+		daca este un camp il inlocuiesc cu valoarea corespunzatoare.
+		Dificultatea la aceasta problema este ca initiral foloseam strstr pentru a cauta campurile
+		pana cand nu mai gaseam camp ul pe care doream sa il inlocuiesc, astfel intram in cicluri
+		infinite.
+
+
+	3) Generare Parole
+	
+		Timp estimat: 90 de minute
+		Dificultati: intelegerea conceptului de vector de pointeri la functii
+
+		Am respectat restrictiile si precizariile astfel mi a fost mult mai usor sa realizez 
+		problema impartind o in functii usor de verificat separat, pentru codificarea 1 nu am 
+		identificat alta rezolvare decat prin utilizarea unui vector delcarat static int, pentru
+		codificarea 2 am folosit ce am invatat in laboraturl cu lucrul pe biti, iar codificarea 3
+		este echivalentul mai specific al functiei toupper.
+		Cel mai important aspect al problemei a fost sa pun terminator pentru fiecare "cod" din fiecare
+		codificare, acest lucru l am realizat cu sprintf sau manual cod[ultimul caracter]=0;
+
+	!) 
+		Daca este posibil as dori sa se testeze manual testul 6 de la problema 2, 
+		personal am testat de pe laptopuri diferite, intr un caz mi a dat crash, in celalat
+		a functionat, verificand cu diff output ul dupa rularea cu output ul din ref, am 
+		obtinut raspunsul corect.
+		Scuze de deranj pentru acest request si multumesc anticipat.
+		
+
